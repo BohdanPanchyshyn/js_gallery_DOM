@@ -7,5 +7,5 @@ nav.addEventListener('click', (even) => {
 
   const mainImage = document.querySelector('#largeImg');
 
-  mainImage.src = even.target.parentElement.href;
+  mainImage.src = even.target.closest('a').href;
 });
